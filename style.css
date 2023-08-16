@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Satisfy&display=swap');
+
+:root{
+  --color-shadow:#0000002c;
+  --color-twitch:#6441a5;
+  --color-twitter:#1DA1F2;
+  --color-spotify:	#1DB954;
+  --color-instagram:#F56040;
+
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body, html{
+  height: 100%;
+  width: 100%;
+}
+
+#nickName{
+  position:relative;
+  top: 0%;
+  font-family: 'Raleway', sans-seri;
+  font-size: 50px;
+  font-weight: 500;
+  font-style: italic;
+  color: #ffffff;
+}
+
+#aviso{
+  position: absolute;
+  top: 90%;
+  color: white;
+  font-family: 'Raleway', sans-seri;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.divIcones{
+  display: grid;
+  place-items: center;
+  height: 100%;
+  background: linear-gradient(180deg,#000000,#0e0000,#330000);
+  width: 100%;
+  font-family: sans-serif;
+  align-content: center;
+}
+/*  background: linear-gradient(180deg,#000000,#0e0000,#330000); */
+
+.lista{
+  list-style: none;
+  display: flex;
+}
+
+.icone, a{
+  text-decoration: none;
+  border-radius: 30%;
+  padding: 12px;
+  margin: 10px;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+a{
+position: absolute;
+}
+.icone{
+  position: relative;
+  background-color: #ffffff;
+  font-size: 18px;
+  box-shadow: 0 10px 10px var(--color-shadow);
+}
+
+.socialMedia{
+  position: absolute;
+  top:0;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 9px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px var(--color-shadow);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.imgIcone{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.art{
+  height: 150px;
+  width: 150px;
+  position: relative;
+  top: 0%;
+  border-radius: 100%;
+  box-shadow: 0 10px 10px var(--color-shadow);
+}
+
+/* ------------- Todos os hovers do html ------------- */
+
+#iconeInstagram:hover, .socialMedia{
+  background: linear-gradient(330deg,	#FFDC80,#F77737, #FD1D1D, #833AB4, #405DE6);
+  color: #ffffff;
+}
+
+
+#iconeTwitch:hover, .socialMedia{
+  background-color: var(--color-twitch);
+  color: #ffffff;
+}
+
+#iconeTwitter:hover, .socialMedia{
+  background-color: var(--color-twitter);
+  color: #ffffff;
+}
+
+#imgIcone:hover{
+  color: white;
+}
+
+#iconeSpotify:hover, .socialMedia{
+  background-color: var(--color-spotify);
+  color: #ffffff;
+}
+

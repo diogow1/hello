@@ -1,1 +1,2 @@
-# pv-social-media
+# social-media-html-css
+Social media icons in html and css
